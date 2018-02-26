@@ -1,10 +1,11 @@
 package udpexample3;
 
+import java.io.IOException;
 import java.net.*;
 
 public class SimpleUDPExampleServer3 {
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws SocketException, IOException{
         DatagramSocket serverSocket = new DatagramSocket(9876);
 
         while (true) {
